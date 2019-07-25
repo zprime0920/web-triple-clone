@@ -6,14 +6,7 @@
   ],
   "jsRules": {},
   "rules": {
-    "import-name": [
-      true,
-      {
-        "react": "React",
-        "reactDom": "ReactDOM",
-        "logoSvg": "logo"
-      }
-    ],
+    "import-name": false,
     "variable-name": {
       "options": [
         "ban-keywords",
