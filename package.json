@@ -1,5 +1,6 @@
 {
   "name": "web-triple-clone",
+  "homepage": "https://zprime0920.github.io/web-triple-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.5",
     "@types/styled-components": "^4.1.18",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -23,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:ts:init": "tslint --init",
-    "lint:ts": "tslint -p tsconfig.json -c tslint.json 'src/**/*.+(ts|tsx)'"
+    "lint:ts": "tslint -p tsconfig.json -c tslint.json 'src/**/*.+(ts|tsx)'",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
