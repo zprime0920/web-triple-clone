@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import CountUp from 'react-countup';
 
 interface MetricsProps {
 }
@@ -20,13 +21,25 @@ const Metrics: React.FunctionComponent<MetricsProps> = () => {
   return (
     <MetricsContainer>
       <MetricItem>
-        <strong>410만 명</strong>의 여행자
+        <strong>
+          <CountUp end={410} />
+          만 명
+        </strong>
+        의 여행자
       </MetricItem>
       <MetricItem>
-        <strong>40만 개</strong>의 여행 리뷰
+        <strong>
+          <CountUp end={40} />
+          만 개
+        </strong>
+        의 여행 리뷰
       </MetricItem>
       <MetricItem>
-        <strong>250만 개</strong>의 여행 일정
+        <strong>
+          <CountUp end={250} />
+          만 개
+        </strong>
+        의 여행 일정
       </MetricItem>
     </MetricsContainer>
   );
