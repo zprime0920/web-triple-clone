@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ContentLogo from 'components/ContentLogo';
 import Metrics from 'components/Metrics';
 import Awards from 'components/Awards';
+import FadeIn from 'components/FadeIn';
 
 const SectionContainer = styled.div`
   display: flex;
@@ -16,10 +17,16 @@ const SectionContainer = styled.div`
 const App: React.FC = () => {
   return (
     <SectionContainer>
-      <ContentLogo />
+      <FadeIn>
+        <ContentLogo />
+      </FadeIn>
       <div>
-        <Metrics />
-        <Awards />
+        <FadeIn delay={100}>
+          <Metrics />
+        </FadeIn>
+        <FadeIn delay={200}>
+          <Awards />
+        </FadeIn>
       </div>
     </SectionContainer>
   );
