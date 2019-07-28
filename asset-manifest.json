@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/web-triple-clone/static/js/main.af9a8ff7.chunk.js",
-    "main.js.map": "/web-triple-clone/static/js/main.af9a8ff7.chunk.js.map",
+    "main.js": "/web-triple-clone/static/js/main.661f4682.chunk.js",
+    "main.js.map": "/web-triple-clone/static/js/main.661f4682.chunk.js.map",
     "runtime~main.js": "/web-triple-clone/static/js/runtime~main.64ae6c15.js",
     "runtime~main.js.map": "/web-triple-clone/static/js/runtime~main.64ae6c15.js.map",
-    "static/js/2.18ad7832.chunk.js": "/web-triple-clone/static/js/2.18ad7832.chunk.js",
-    "static/js/2.18ad7832.chunk.js.map": "/web-triple-clone/static/js/2.18ad7832.chunk.js.map",
+    "static/js/2.3afb4935.chunk.js": "/web-triple-clone/static/js/2.3afb4935.chunk.js",
+    "static/js/2.3afb4935.chunk.js.map": "/web-triple-clone/static/js/2.3afb4935.chunk.js.map",
     "index.html": "/web-triple-clone/index.html",
-    "precache-manifest.4a86a7cd72a40888ceb423a9db703d47.js": "/web-triple-clone/precache-manifest.4a86a7cd72a40888ceb423a9db703d47.js",
+    "precache-manifest.db55e582d8cd7f495a88d0cbfca33c5f.js": "/web-triple-clone/precache-manifest.db55e582d8cd7f495a88d0cbfca33c5f.js",
     "service-worker.js": "/web-triple-clone/service-worker.js",
     "static/media/play-store@2x.png": "/web-triple-clone/static/media/play-store@2x.fd46ac10.png",
     "static/media/triple@2x.png": "/web-triple-clone/static/media/triple@2x.167164f3.png"
