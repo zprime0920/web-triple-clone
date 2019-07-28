@@ -2,10 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 import imgTriple from 'assets/triple@2x.png';
 
-interface ContentLogoProps {
-
-}
-
 const ContentLogoWrapper = styled.div`
   position: relative;
   width: 400px;
@@ -23,7 +19,7 @@ const ImgLogo = styled.img`
   width: 100%;
 `;
 
-const ContentLogo: React.FunctionComponent<ContentLogoProps> = () => {
+const ContentLogo: React.FunctionComponent = () => {
   return (
     <ContentLogoWrapper>
       <ImgLogo

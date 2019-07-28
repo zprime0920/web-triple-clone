@@ -2,12 +2,12 @@ import * as React from 'react';
 import styled from 'styled-components';
 import CountUp from 'react-countup';
 
-interface MetricsProps {
+interface Metric {
+  id: string;
+  value: number;
+  unit: string;
+  description: string;
 }
-
-const MetricsContainer = styled.div`
-
-`;
 
 const MetricItem = styled.div`
   margin-bottom: 20px;
@@ -17,31 +17,44 @@ const MetricItem = styled.div`
   letter-spacing: -1px;
 `;
 
-const Metrics: React.FunctionComponent<MetricsProps> = () => {
+const metrics: Metric[] = [
+  {
+    id: 'traveler',
+    value: 410,
+    unit: '만 명',
+    description: '의 여행자',
+  },
+  {
+    id: 'review',
+    value: 40,
+    unit: '만 개',
+    description: '의 여행 리뷰',
+  },
+  {
+    id: 'itinerary',
+    value: 250,
+    unit: '만 개',
+    description: '의 여행 일정',
+  },
+];
+
+function makeMetricToNode({ id, value, unit, description }: Metric): JSX.Element {
   return (
-    <MetricsContainer>
-      <MetricItem>
-        <strong>
-          <CountUp end={410} />
-          만 명
-        </strong>
-        의 여행자
-      </MetricItem>
-      <MetricItem>
-        <strong>
-          <CountUp end={40} />
-          만 개
-        </strong>
-        의 여행 리뷰
-      </MetricItem>
-      <MetricItem>
-        <strong>
-          <CountUp end={250} />
-          만 개
-        </strong>
-        의 여행 일정
-      </MetricItem>
-    </MetricsContainer>
+    <MetricItem key={id}>
+      <strong>
+        <CountUp end={value} />
+        {unit}
+      </strong>
+      {description}
+    </MetricItem>
+  );
+}
+
+const Metrics: React.FunctionComponent = () => {
+  return (
+    <div>
+      {metrics.map(makeMetricToNode)}
+    </div>
   );
 };
 
